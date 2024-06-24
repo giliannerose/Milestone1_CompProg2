@@ -124,11 +124,11 @@ public class EmployeeInfoGUI {
                 // Calculate net salary after deductions
                 double netSalary = grossSalary - sssContribution - philhealthContribution - pagibigContribution;
 
-                return "Gross Salary: P" + String.format("%.2f", grossSalary) + "\n" +
-                       "SSS Contribution (4.5%): P" + String.format("%.2f", sssContribution) + "\n" +
-                       "PhilHealth Contribution (2.5%): P" + String.format("%.2f", philhealthContribution) + "\n" +
-                       "Pag-IBIG Contribution (3%): P" + String.format("%.2f", pagibigContribution) + "\n" +
-                       "Net Salary after SSS, PhilHealth, and Pag-IBIG Contributions: P" + String.format("%.2f", netSalary);
+                return "Gross Salary : P" + String.format("%.2f", grossSalary) + "\n" +
+                       "SSS          : P" + String.format("%.2f", sssContribution) + "\n" +
+                       "PhilHealth   : P" + String.format("%.2f", philhealthContribution) + "\n" +
+                       "Pag-IBIG     : P" + String.format("%.2f", pagibigContribution) + "\n" +
+                       "Net Salary   : P" + String.format("%.2f", netSalary);
 
             } catch (NumberFormatException e) {
                 return "Invalid hourly rate format for employee.";
